@@ -93,7 +93,7 @@ const Testimonials = () => {
             </div>
 
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Mais de 500 clientes satisfeitos
+              Mais de 6000 clientes satisfeitos
             </h3>
 
             <p className="text-xl text-orange-100 mb-8 leading-relaxed">
@@ -103,7 +103,7 @@ const Testimonials = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-3xl font-bold text-white mb-2">500+</div>
+                <div className="text-3xl font-bold text-white mb-2">6000+</div>
                 <div className="text-orange-100">Mesas Entregues</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
@@ -111,7 +111,7 @@ const Testimonials = () => {
                 <div className="text-orange-100">Clientes Satisfeitos</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-3xl font-bold text-white mb-2">3 anos</div>
+                <div className="text-3xl font-bold text-white mb-2">6 Meses</div>
                 <div className="text-orange-100">Garantia Média</div>
               </div>
             </div>

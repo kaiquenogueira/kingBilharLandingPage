@@ -79,7 +79,7 @@ const Contact = () => {
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Localização</h3>
-              <p className="text-gray-300 mb-2">Hortolândia - SP</p>
+              <p className="text-gray-300 mb-2">Campinas - SP</p>
               <p className="text-sm text-gray-400">Atendemos todo Brasil</p>
             </div>
 
