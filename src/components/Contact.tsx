@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, Mail, MessageCircle } from 'lucide-react';
+import { MetaEvents } from '../utils/metaTracking';
 
 const Contact = () => {
   const whatsapp1 = "5519974234236";
@@ -7,6 +8,21 @@ const Contact = () => {
   const message = "Olá! Gostaria de saber mais sobre as mesas de bilhar King Bilhar.";
   const whatsappUrl1 = `https://wa.me/${whatsapp1}?text=${encodeURIComponent(message)}`;
   const whatsappUrl2 = `https://wa.me/${whatsapp2}?text=${encodeURIComponent(message)}`;
+
+  const handleWhatsAppClick = async (phoneNumber: string, buttonType: string) => {
+    try {
+      await MetaEvents.contact(
+        { phone: phoneNumber },
+        { 
+          contact_method: 'whatsapp',
+          button_type: buttonType,
+          phone_number: phoneNumber
+        }
+      );
+    } catch (error) {
+      console.error('Error tracking WhatsApp click:', error);
+    }
+  };
 
   return (
     <section id="contato" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
@@ -41,6 +57,7 @@ const Contact = () => {
                 href={whatsappUrl1}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => handleWhatsAppClick(whatsapp1, 'primary_cta')}
                 className="inline-flex items-center space-x-3 bg-white text-green-600 hover:bg-gray-100 px-6 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 <MessageCircle className="w-6 h-6" />
@@ -50,6 +67,7 @@ const Contact = () => {
                 href={whatsappUrl2}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => handleWhatsAppClick(whatsapp2, 'secondary_cta')}
                 className="inline-flex items-center space-x-3 bg-white text-green-600 hover:bg-gray-100 px-6 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 <MessageCircle className="w-6 h-6" />
@@ -108,6 +126,7 @@ const Contact = () => {
               href={whatsappUrl1}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => handleWhatsAppClick(whatsapp1, 'specialist_cta')}
               className="inline-flex items-center space-x-3 bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               <MessageCircle className="w-6 h-6" />

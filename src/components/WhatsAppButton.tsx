@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { MetaEvents } from '../utils/metaTracking';
 
 const WhatsAppButton = () => {
   const phoneNumber = "5519974234236"; // Número oficial
@@ -7,11 +8,27 @@ const WhatsAppButton = () => {
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+  const handleWhatsAppClick = async () => {
+    try {
+      await MetaEvents.contact(
+        { phone: phoneNumber },
+        { 
+          contact_method: 'whatsapp',
+          button_type: 'floating_button',
+          phone_number: phoneNumber
+        }
+      );
+    } catch (error) {
+      console.error('Error tracking WhatsApp floating button click:', error);
+    }
+  };
+
   return (
     <a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleWhatsAppClick}
       className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 animate-bounce"
       style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}
       aria-label="Fale conosco no WhatsApp"
