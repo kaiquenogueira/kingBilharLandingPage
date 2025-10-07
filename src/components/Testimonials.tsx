@@ -3,6 +3,8 @@ import { Star, Quote } from 'lucide-react';
 import cacapaPreta from '../assets/cacapaPreta.jpeg';
 import cacapaLaranja from '../assets/cacapaLaranja.jpeg';
 import redeVermelha from '../assets/redeVermelha.jpeg';
+import mesaLuxoDiamante from '../assets/mesaLuxoDiamante/WhatsApp Image 2025-10-07 at 13.36.40.jpeg';
+import mesaLuxoMarques from '../assets/mesaLuxoMarques/WhatsApp Image 2025-10-07 at 13.31.36.jpeg';
 
 const Testimonials = () => {
   const testimonials = [
@@ -26,6 +28,20 @@ const Testimonials = () => {
       rating: 5,
       text: "Excelente custo-benefício! Parcelamento facilitado e montagem profissional. Estamos muito satisfeitos.",
       image: redeVermelha
+    },
+    {
+      name: "Eduardo Marques",
+      location: "Santos - SP",
+      rating: 5,
+      text: "A Mesa Luxo DIAMANTE superou todas as expectativas! O design é sofisticado e a qualidade é incomparável. Vale cada centavo investido.",
+      image: mesaLuxoDiamante
+    },
+    {
+      name: "Patricia Lima",
+      location: "Sorocaba - SP",
+      rating: 5,
+      text: "Comprei a Mesa Luxo MARQUES e estou apaixonada! O acabamento em Jequitibá-Rosa é lindíssimo e o tampo de jantar é muito prático.",
+      image: mesaLuxoMarques
     }
   ];
 

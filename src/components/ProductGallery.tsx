@@ -4,6 +4,9 @@ import cacapaLaranja from '../assets/cacapaLaranja.jpeg';
 import cacapaPreta from '../assets/cacapaPreta.jpeg';
 import redePreta from '../assets/redePreta.jpeg';
 import redeVermelha from '../assets/redeVermelha.jpeg';
+import mesaLuxoDiamante1 from '../assets/mesaLuxoDiamante/WhatsApp Image 2025-10-07 at 13.36.40.jpeg';
+import mesaLuxoDiamante2 from '../assets/mesaLuxoDiamante/WhatsApp Image 2025-10-07 at 13.36.52.jpeg';
+import mesaLuxoMarques1 from '../assets/mesaLuxoMarques/WhatsApp Image 2025-10-07 at 13.31.36.jpeg';
 
 const ProductGallery = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
@@ -44,10 +47,40 @@ const ProductGallery = () => {
       installments: 406,
       image: redeVermelha,
       accessories: ['6 tacos', 'jogo de bolas', 'bolão', 'giz', 'taqueira', 'triângulo', 'capa', 'pés niveladores']
+    },
+    {
+      id: 5,
+      type: 'Luxo',
+      name: 'Mesa Luxo DIAMANTE 1,95 × 1,25',
+      price: 19990,
+      installments: 2220,
+      image: mesaLuxoDiamante1,
+      accessories: ['6 tacos', '1 kit de giz', '1 jogo de bolas', '1 triângulo', '1 tampo de jantar', '1 kit de ping pong'],
+      description: 'A Mesa Luxo Diamante é a escolha perfeita para quem busca sofisticação, durabilidade e design exclusivo. Com estrutura em metalon e madeira e caçapas embutidas, oferece acabamento refinado e máxima performance para momentos de lazer com elegância.'
+    },
+    {
+      id: 6,
+      type: 'Luxo',
+      name: 'Mesa Luxo DIAMANTE 2,26 × 1,26',
+      price: 22399,
+      installments: 2487,
+      image: mesaLuxoDiamante2,
+      accessories: ['6 tacos', '1 kit de giz', '1 jogo de bolas', '1 triângulo', '1 tampo de jantar', '1 kit de ping pong'],
+      description: 'A Mesa Luxo Diamante é a escolha perfeita para quem busca sofisticação, durabilidade e design exclusivo. Com estrutura em metalon e madeira e caçapas embutidas, oferece acabamento refinado e máxima performance para momentos de lazer com elegância.'
+    },
+    {
+      id: 7,
+      type: 'Luxo',
+      name: 'Mesa Luxo MARQUES 1,95 × 1,25',
+      price: 18699,
+      installments: 2076,
+      image: mesaLuxoMarques1,
+      accessories: ['6 tacos', '1 kit de giz', '1 jogo de bolas', '1 triângulo', '1 tampo de jantar', '1 kit de ping pong'],
+      description: 'A Mesa Luxo MARQUES une sofisticação, resistência e acabamento de alto padrão. Produzida com estrutura em madeira e metalon, campo em pedra ardósia, e tabelas em madeira maciça Jequitibá-Rosa, estofadas internamente para garantir performance e conforto no jogo.'
     }
   ];
 
-  const filters = ['Todos', 'Caçapa', 'Redinha'];
+  const filters = ['Todos', 'Caçapa', 'Redinha', 'Luxo'];
 
   const filteredProducts = activeFilter === 'Todos' 
     ? products 
