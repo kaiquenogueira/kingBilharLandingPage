@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 
-const FAQ = () => {
+export default function FAQ() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
   const faqs = [
@@ -90,6 +90,4 @@ const FAQ = () => {
       </div>
     </section>
   );
-};
-
-export default FAQ;
+}

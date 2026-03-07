@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
 
             <div className="pt-8">
-              <p className="text-gray-400 text-sm mb-4">Mais de 500 clientes satisfeitos desde 2021</p>
+              <p className="text-gray-400 text-sm mb-4">Mais de 6000 clientes satisfeitos desde 2021</p>
               <div className="flex items-center space-x-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />

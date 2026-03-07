@@ -46,14 +46,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="depoimentos" className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             O que nossos <span className="text-orange-500">clientes dizem</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Mais de 500 clientes satisfeitos confiam na qualidade King Bilhar. 
+            Mais de 6000 clientes satisfeitos confiam na qualidade King Bilhar. 
             Veja alguns depoimentos de quem já transformou seu lar.
           </p>
         </div>

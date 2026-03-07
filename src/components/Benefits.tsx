@@ -81,9 +81,9 @@ const Benefits = () => {
               >
                 WhatsApp: (19) 97423-4236
               </a>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+              <a href={whatsappUrl1} target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                 Solicitar Orçamento
-              </button>
+              </a>
             </div>
           </div>
         </div>

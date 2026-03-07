@@ -61,9 +61,9 @@ const ValueProposition = () => {
             Nossa equipe domina as técnicas tradicionais de marcenaria, 
             garantindo que cada mesa seja uma peça única e durável.
           </p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+          <a href="#contato" className="inline-flex bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105">
             Conheça nosso processo
-          </button>
+          </a>
         </div>
       </div>
     </section>
