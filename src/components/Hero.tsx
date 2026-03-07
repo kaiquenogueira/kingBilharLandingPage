@@ -80,9 +80,9 @@ const Hero = () => {
             <div className="absolute -bottom-6 -left-6 bg-white text-gray-900 p-6 rounded-lg shadow-xl">
               <div className="text-center">
                 <p className="text-2xl font-bold text-orange-500">A partir de</p>
-                <p className="text-3xl font-bold text-gray-900">R$ 3.300</p>
+                <p className="text-3xl font-bold text-gray-900">R$ 3.600</p>
                 <p className="text-sm text-gray-600">à vista ou</p>
-                <p className="text-lg font-semibold">10x de R$ 367</p>
+                <p className="text-lg font-semibold">10x de R$ 387</p>
               </div>
             </div>
           </div>
