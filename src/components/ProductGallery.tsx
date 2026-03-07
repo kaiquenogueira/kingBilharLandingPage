@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Filter, ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import cacapaLaranja from '../assets/cacapaLaranja.jpeg';
 import cacapaPreta from '../assets/cacapaPreta.jpeg';
 import redePreta from '../assets/redePreta.jpeg';

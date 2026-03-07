@@ -35,12 +35,6 @@ const FAQ = () => {
     setOpenFAQ(openFAQ === index ? null : index);
   };
 
-  const whatsapp1 = "5519974234236";
-  const whatsapp2 = "5519994863115";
-  const message = "Olá! Gostaria de saber mais sobre as mesas de bilhar King Bilhar.";
-  const whatsappUrl1 = `https://wa.me/${whatsapp1}?text=${encodeURIComponent(message)}`;
-  const whatsappUrl2 = `https://wa.me/${whatsapp2}?text=${encodeURIComponent(message)}`;
-
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">

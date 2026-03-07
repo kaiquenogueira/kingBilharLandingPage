@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, CreditCard, Home, Phone, Shield, MapPin } from 'lucide-react';
+import { Truck, Phone, Shield } from 'lucide-react';
 
 const Benefits = () => {
   const benefits = [
