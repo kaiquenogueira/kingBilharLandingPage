@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 import { MetaEvents } from '../utils/metaTracking';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "5519974234236"; // Número oficial
+  const phoneNumber = "5519994863115";
   const message = "Olá! Gostaria de saber mais sobre as mesas de bilhar King Bilhar.";
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

@@ -3,11 +3,9 @@ import { Phone, MapPin, Mail, MessageCircle } from 'lucide-react';
 import { MetaEvents } from '../utils/metaTracking';
 
 const Contact = () => {
-  const whatsapp1 = "5519974234236";
-  const whatsapp2 = "5519994863115";
+  const whatsapp = "5519994863115";
   const message = "Olá! Gostaria de saber mais sobre as mesas de bilhar King Bilhar.";
-  const whatsappUrl1 = `https://wa.me/${whatsapp1}?text=${encodeURIComponent(message)}`;
-  const whatsappUrl2 = `https://wa.me/${whatsapp2}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
 
   const handleWhatsAppClick = async (phoneNumber: string, buttonType: string) => {
     try {
@@ -54,20 +52,10 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href={whatsappUrl1}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleWhatsAppClick(whatsapp1, 'primary_cta')}
-                className="inline-flex items-center space-x-3 bg-white text-green-600 hover:bg-gray-100 px-6 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-              >
-                <MessageCircle className="w-6 h-6" />
-                <span>WhatsApp (19) 97423-4236</span>
-              </a>
-              <a
-                href={whatsappUrl2}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => handleWhatsAppClick(whatsapp2, 'secondary_cta')}
+                onClick={() => handleWhatsAppClick(whatsapp, 'primary_cta')}
                 className="inline-flex items-center space-x-3 bg-white text-green-600 hover:bg-gray-100 px-6 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 <MessageCircle className="w-6 h-6" />
@@ -84,10 +72,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">WhatsApp</h3>
               <p className="text-gray-300 mb-2">
-                <a href={whatsappUrl1} target="_blank" rel="noopener noreferrer" className="hover:text-orange-400">(19) 97423-4236</a>
-              </p>
-              <p className="text-gray-300 mb-2">
-                <a href={whatsappUrl2} target="_blank" rel="noopener noreferrer" className="hover:text-orange-400">(19) 99486-3115</a>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-orange-400">(19) 99486-3115</a>
               </p>
               <p className="text-sm text-gray-400">WhatsApp sempre disponível</p>
             </div>
@@ -123,10 +108,10 @@ const Contact = () => {
               para seu espaço e necessidades.
             </p>
             <a
-              href={whatsappUrl1}
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => handleWhatsAppClick(whatsapp1, 'specialist_cta')}
+              onClick={() => handleWhatsAppClick(whatsapp, 'specialist_cta')}
               className="inline-flex items-center space-x-3 bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
             >
               <MessageCircle className="w-6 h-6" />

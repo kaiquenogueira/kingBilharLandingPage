@@ -23,7 +23,7 @@ const Benefits = () => {
     }
   ];
 
-  const whatsapp1 = "5519974234236";
+  const whatsapp1 = "5519994863115";
   const message = "Olá! Gostaria de saber mais sobre as mesas de bilhar King Bilhar.";
   const whatsappUrl1 = `https://wa.me/${whatsapp1}?text=${encodeURIComponent(message)}`;
 
@@ -79,7 +79,7 @@ const Benefits = () => {
                 rel="noopener noreferrer"
                 className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
-                WhatsApp: (19) 97423-4236
+                WhatsApp: (19) 99486-3115
               </a>
               <a href={whatsappUrl1} target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                 Solicitar Orçamento

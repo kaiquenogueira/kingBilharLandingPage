@@ -3,7 +3,7 @@ import { ArrowRight, Star, Truck, CreditCard } from 'lucide-react';
 import cacapaPreta from '../assets/cacapaPreta.jpeg';
 
 const Hero = () => {
-  const whatsappUrl = `https://wa.me/5519974234236?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/5519994863115?text=${encodeURIComponent(
     'Olá! Gostaria de saber mais sobre as mesas de bilhar King Bilhar.'
   )}`;
 
