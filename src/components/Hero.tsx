@@ -72,6 +72,8 @@ const Hero = () => {
                 src={cacapaPreta}
                 alt="Mesa de Bilhar King - Madeira Jequitibá Rosa"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
             
@@ -80,7 +82,7 @@ const Hero = () => {
                 <p className="text-2xl font-bold text-orange-500">A partir de</p>
                 <p className="text-3xl font-bold text-gray-900">R$ 3.300</p>
                 <p className="text-sm text-gray-600">à vista ou</p>
-                <p className="text-lg font-semibold">10x no cartão</p>
+                <p className="text-lg font-semibold">10x de R$ 367</p>
               </div>
             </div>
           </div>

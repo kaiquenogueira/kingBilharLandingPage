@@ -16,8 +16,8 @@ const ProductGallery = () => {
       id: 1,
       type: 'Caçapa',
       name: 'Mesa Caçapa 1,90 × 1,20',
-      price: 3300,
-      installments: 367,
+      price: 3600,
+      installments: 387,
       image: cacapaPreta,
       accessories: ['6 tacos', 'jogo de bolas', 'bolão', 'giz', 'taqueira', 'triângulo', 'capa', 'pés niveladores']
     },
@@ -25,8 +25,8 @@ const ProductGallery = () => {
       id: 2,
       type: 'Caçapa',
       name: 'Mesa Caçapa 2,26 × 1,26',
-      price: 3550,
-      installments: 395,
+      price: 3950,
+      installments: 420,
       image: cacapaLaranja,
       accessories: ['6 tacos', 'jogo de bolas', 'bolão', 'giz', 'taqueira', 'triângulo', 'capa', 'pés niveladores']
     },
@@ -34,8 +34,8 @@ const ProductGallery = () => {
       id: 3,
       type: 'Redinha',
       name: 'Mesa Redinha 1,85 × 1,14',
-      price: 3450,
-      installments: 383,
+      price: 3300,
+      installments: 367,
       image: redePreta,
       accessories: ['6 tacos', 'jogo de bolas', 'bolão', 'giz', 'taqueira', 'triângulo', 'capa', 'pés niveladores']
     },
@@ -43,8 +43,8 @@ const ProductGallery = () => {
       id: 4,
       type: 'Redinha',
       name: 'Mesa Redinha 2,20 × 1,20',
-      price: 4060,
-      installments: 406,
+      price: 3550,
+      installments: 395,
       image: redeVermelha,
       accessories: ['6 tacos', 'jogo de bolas', 'bolão', 'giz', 'taqueira', 'triângulo', 'capa', 'pés niveladores']
     },
@@ -136,6 +136,8 @@ const ProductGallery = () => {
                   src={product.image}
                   alt={product.name}
                   className="w-full h-64 object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
