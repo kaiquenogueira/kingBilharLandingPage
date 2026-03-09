@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="90" y="90" width="1020" height="450" rx="24" fill="#1f2937" stroke="#f97316" stroke-width="6" />
+  <text x="140" y="260" fill="#f97316" font-size="84" font-family="Arial, Helvetica, sans-serif" font-weight="700">King Bilhar</text>
+  <text x="140" y="340" fill="#ffffff" font-size="46" font-family="Arial, Helvetica, sans-serif" font-weight="600">Mesas de Bilhar Residenciais</text>
+  <text x="140" y="402" fill="#d1d5db" font-size="34" font-family="Arial, Helvetica, sans-serif">Modelos caçapa e rede com acabamento premium</text>
+  <text x="140" y="458" fill="#d1d5db" font-size="34" font-family="Arial, Helvetica, sans-serif">Atendimento em Campinas e todo Brasil</text>
+</svg>
